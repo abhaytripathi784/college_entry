@@ -1,0 +1,24 @@
+Entry & Exit System
+
+	Director Login
+		Check Entry & Exit
+		Create Gaurd Account
+			Username
+			First Name
+			Last Name
+			Password
+			
+			Logout
+			
+	Gaurd Login
+		Insert Entry
+			Name
+			Purpose
+			Came from (Address)
+
+		Update Exit
+		Check Entry
+		
+			Logout
+
+Admin username: admin Password: hack@123

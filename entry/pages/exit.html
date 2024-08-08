@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Exit{% endblock title %}
+
+{% block body %}
+		<div style="text-align:center">
+			<h4><a href="ghome">Home</a></h4>
+			<h3>Update Exit</h3>
+			<h5 style="color:red">{{msg}}</h5>
+			<table border="1" width="100%">
+				<tr>
+					<th>Sr No.</th>
+					<th>Guest Name</th>
+					<th>Mobile Number</th>
+					<th>Purpose</th>
+					<th>Address</th>
+					<th>Entry Time</th>
+					<th>Exit Time</th>
+				</tr>
+			{% for i in res %}
+				<tr>
+					<td>{{i.id}}</td>
+					<td>{{i.guest_name}}</td>
+					<td>{{i.guest_num}}</td>
+					<td>{{i.purpose}}</td>
+					<td>{{i.address}}</td>
+					<td>{{i.intime}}</td>
+					<td>{{i.exittime}} <a href="update_exit?id={{i.id}}">Exit</a></td>
+				</tr>
+			{% endfor %}
+			</table>
+			
+		</div>
+{% endblock body %}
